@@ -1,0 +1,159 @@
+/*
+COLOR PALETTE
+https://coolors.co/3f033f-f2f3ae-838e83-b76d68-ff6b35
+#3F033F - Dark Purple
+#F2F3AE - Pale Lime-Yellow
+#F4F3EE - White-ish
+#53999A - Blue-Green
+#B76D68 - Pastelle Red
+#FF964F - Orange
+*/
+
+/* Global Styles
+---------------------------------------------------------*/
+img {
+    width: 100%;
+    height: 100%
+}
+
+.bg-black {
+    background: #000
+}
+
+.skill-block {
+    width: 30%
+}
+
+@media (min-width: 991px) and (max-width:1200px) {
+    .skill-block {
+        padding: 32px !important
+    }
+}
+
+@media (min-width: 1200px) {
+    .skill-block {
+        padding: 56px !important
+    }
+}
+
+body {
+    color: #53999A;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+  }
+  a {
+    color: #3F033F;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+  }
+  .content-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+    /* NavBar  ---------------------------------------------------------*/
+  /* Generate series of `.navbar-expand-*` responsive classes for configuring */
+/* where your navbar collapses. */
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+     /* stylelint-disable-next-line scss/selector-no-union-class-name */
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+
+        .offcanvas-header {
+          display: none;
+        }
+
+        .offcanvas {
+          position: inherit;
+          bottom: 0;
+          z-index: 1000;
+          flex-grow: 1;
+          visibility: visible !important;  /*stylelint-disable-line declaration-no-important*/
+          background-color: transparent;
+          border-right: 0;
+          border-left: 0;
+          @include transition(none);
+          transform: none;
+        }
+        .offcanvas-top,
+        .offcanvas-bottom {
+          height: auto;
+          border-top: 0;
+          border-bottom: 0;
+        }
+
+        .offcanvas-body {
+          display: flex;
+          flex-grow: 0;
+          padding: 0;
+          overflow-y: visible;
+        }
+      }
+    }
+  }
+}
+  
+  /* Profile
+  ---------------------------------------------------------*/
+  header {
+    background: #3F033F;
+  }
+  
+   
+  /* Contact Info
+  ---------------------------------------------------------*/
+  footer {
+    background: #53999A;
+    color: #F4F3EE;
+  }
+  
