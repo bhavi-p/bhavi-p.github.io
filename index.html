@@ -104,17 +104,21 @@
               <div>
                 <a class="btn" href="https://www.linkedin.com/in/bhavika-patel-nc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a class="btn" href="https://github.com/bhavi-p" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <!-- Trigger/Open The Modal -->
-                <button class="btn" id="myBtn">Email</button>
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Email: bhavika.is.patel@gmail.com</p>
-                  </div>
+                <!-- Message Box HTML -->
+                <div class="Click-here">Contact</div>        
+                <div class="custom-model-main">
+                    <div class="custom-model-inner">        
+                    <div class="close-btn">×</div>
+                        <div class="custom-model-wrap">
+                            <div class="pop-up-content-wrap">
+                              <h2>Email Me!</h2>
+                              <p>bhavika.is.patel@gmail.com</p>
+                            </div>
+                        </div>  
+                    </div>  
+                    <div class="bg-overlay"></div>
+                </div>
+                          <!-- End Message Box HTML -->
 
               </div>
             </div>
@@ -142,4 +146,15 @@
   </body>
             
 </html>
+
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script>
+$(".Click-here").on('click', function() {
+  $(".custom-model-main").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main").removeClass('model-open');
+});
+</script>
 
