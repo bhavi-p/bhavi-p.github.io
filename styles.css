@@ -149,7 +149,8 @@ body {
     background-color: rgba(41, 155, 163, 0.4);
   }
   .about-me {
-    height: 70vh;
+    height: 100vh;
+    padding: 15px;
   }
 
   .about-me .btn:hover {
