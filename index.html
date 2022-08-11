@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/a4273f2f31.js" crossorigin="anonymous"></script>
+    <title>Bhavika Patel - Analytical . Organized . Inquisitive</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top"><i class="fa-2x fa-regular fa-circle-up"></i></button>
+    <header class="showcase">
+        <div class="showcase-top">
+            <!-- <img src="img/logo.png" alt="Netflix">
+            <a href="#" class="btn btn-rounded">Sign In</a> -->
+        </div>
+        <div class="showcase-content">
+            <h1>Bhavika Patel</h1>
+            <p>Analytical . Organized . Inquisitive</p>
+            <!-- <a href="#" class="btn btn-xl">
+                See My Work <i class="fas fa-chevron-right btn-icon"></i>
+            </a> -->
+
+            <div class="honey-container" onclick="expand()">
+                <div class="toggle" id="toggle">
+                    <i class="fa fa-plus" id="add">
+                    </i>
+                </div>
+            </div>
+            <div class="menu" id="menu">
+                <div class="item">
+                    <a class="honey-a tooltip" href="#">
+                        <i class="fa fa-home">
+                            <span class="tooltiptext">Home</span>
+                        </i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="honey-a tooltip" href="#tabs" onclick="redirect('tab-1')">
+                        <i class="fa fa-address-card">
+                            <span class="tooltiptext">About Me</span>
+                        </i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="honey-a tooltip" href="https://github.com/bhavi-p" target="_blank">
+                        <i class="fa fa-github">
+                            <span class="tooltiptext">GitHub Repos</span>
+                        </i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="honey-a" href="https://www.linkedin.com/in/bhavika-patel-nc/" target="_blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="honey-a" href="#tabs" onclick="redirect('tab-3')">
+                        <i class="fa fa-file-invoice"></i>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="honey-a" href="#tabs" onclick="redirect('tab-2')">
+                        <i class="fa fa-toolbox"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="tabs" id="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-address-card fa-3x"></i>
+                <p class="hide-sm">About Me</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-toolbox fa-3x"></i>
+                <p class="hide-sm">Projects</p>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <i class="fas fa-file-invoice fa-3x"></i>
+                <p class="hide-sm">Resume</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1: About Me -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <h2>Hello, My Name is Bhavika!</h2>
+                        <p class="text-sm">
+                            I am a fast-paced, creative, inquisitive individual with over four years of technical experience. I studied Computer and Electrical Engineering at NC State University and have been playing a hybrid role of Systems Analyst and Scrum Master for the past two years.  
+                        <br><br>To further my passion for Web Development, I enrolled in a Full Stack bootcamp with MIT Emeritus.  I strive to ideate creative, efficient solutions for web applications. Please explore my portfolio to view some of my latest projects.
+                        </p>
+                        <a href="https://www.linkedin.com/in/bhavika-patel-nc/" target ="_blank" class="btn btn-lg">Connect with Me! <i class="fa fa-1.5x fa-linkedin-square"></i></a>
+                    </div>
+                    <img src="img/GitHProf.jpeg" alt="">
+                    
+                </div>
+            </div>
+            <!-- Tab 2: Projects -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <p class="text-lg">
+                        Take a closer look at my project code files on my GitHub!
+                    </p>
+                    <a href="https://github.com/bhavi-p" target="_blank" class="btn btn-md">
+                        <img class="github-logo" src="img/GitHub_Logo.png">
+                        <img class="github-logo-cat" src="img/GitHub-Mark-64px.png">
+                    </a>
+                </div>
+                    <div class="card-deck">
+                        <div class="card">
+                            <a href="https://bhavi-p.github.io/PacMan/" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/PacMenCard.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                              <h5 class="card-title">PacMen Exercise</h5>
+                              <p class="card-text">At the click of a button, generate as many PacMen as you'd like that will get added to an array. When you click start, the PacMen are animated and moving around the window via DOM manipulation.</p>
+                              <p class="card-text"><a class="btn" href="https://bhavi-p.github.io/PacMan/" target="_blank" rel="noopener noreferrer">Demo</a> <a class="btn" href="https://github.com/bhavi-p/PacMan" target="_blank" rel="noopener noreferrer">Code</a></p>
+                            </div>    
+                        </div>
+                        <div class="card">
+                            <a href="https://bhavi-p.github.io/MovingEyes/" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/EyesCard.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                              <h5 class="card-title">Moving Eyes</h5>
+                              <p class="card-text">Utilzing HTML, CSS, and JavaScript this project shows two eyes that follow your mouse cursor. Future iterations may include adding new eyes on mouse click</p>
+                              <p class="card-text"><a class="btn" href="https://bhavi-p.github.io/MovingEyes/" target="_blank" rel="noopener noreferrer">Demo</a> <a class="btn" href="https://github.com/bhavi-p/MovingEyes" target="_blank" rel="noopener noreferrer">Code</a></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://bhavi-p.github.io/Bus-Tracker/" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/BusCard.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                              <h5 class="card-title">Bus Tracker</h5>
+                              <p class="card-text">Using MapBox API, you can view a map of the MIT-Harvard area and clicking "Show Buses" will display live markers indicating the current busses en route in the area.</p>
+                              <p class="card-text"><a class="btn" href="https://bhavi-p.github.io/Bus-Tracker/" target="_blank" rel="noopener noreferrer">Demo</a> <a class="btn" href="https://github.com/bhavi-p/Bus-Tracker" target="_blank" rel="noopener noreferrer">Code</a></p>
+                            </div>
+                        </div>
+                      </div>
+            </div>
+
+            <!-- Tab 3 Content: Resume -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <p class="text-lg">Click below to download my resume!</p>
+                    <a href="./files/No-Column Resume.pdf" class="btn btn-lg" download>Download <i class="fa fa-solid fa-1.5x fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Questions? Call 434-548-5483</p>
+			<div class="footer-cols">
+				<!-- <ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Investor Relations</a></li>
+					<li><a href="#">Ways To Watch</a></li>
+					<li><a href="#">Corporate Information</a></li>
+					<li><a href="#">Netflix Originals</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Terms Of Use</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Redeem Gift Cards</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Speed Test</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Media Center</a></li>
+					<li><a href="#">Buy Gift Cards</a></li>
+					<li><a href="#">Cookie Preferences</a></li>
+					<li><a href="#">Legal Notices</a></li>
+				</ul> -->
+			</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
