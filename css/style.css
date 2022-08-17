@@ -21,6 +21,10 @@ body {
     color: #999;
 }
 
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 /* Scroll to Top Btn */
 #scrollBtn {
     display: none; /* Hidden by default */
