@@ -112,6 +112,10 @@ body {
 }
 
 /* Honeycomb Menu */
+/* .honey-nav {
+    transform: translate(-50%, -50%);
+} */
+
 .honey-container, .menu{
     height: 140px;
     width: 160px;
