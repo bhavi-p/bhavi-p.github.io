@@ -668,6 +668,7 @@ img {
   .card-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .card-title{  
@@ -675,6 +676,8 @@ img {
     font-size: 2vw;
     transition:1s;
     cursor:pointer;
+    padding: 10px;
+    align-items: center;
   }
   .card-title i{  
     /* font-size:45px; */
@@ -697,6 +700,7 @@ img {
     font-size: 1.5vw;
     height:80px; 
     color: gray;
+    padding: 10px;
   }
   
   .card::before, .card::after {
@@ -720,19 +724,24 @@ img {
   .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
     transform: scale3d(1, 1, 1);
   }
+
+  .card-btns {
+    display: block;
+  }
   
-  .card-body .btn {
+  .card-btns .btn {
     color: #F4F3EE;
     background: #3F033F;
     font-size: 1.75vw;
     text-decoration: none;
+    margin: 18px;
     padding: 18px;
     border-radius: 4px;
-    display: inline-flex;
-    justify-items: flex-end;
+    display: flex;
+    /* justify-items: flex-end; */
   }
 
-  .card-body .btn:hover {
+  .card-btns .btn:hover {
     color: #3F033F;
-    background: rgba(63,3,63,0.5);
+    background: #FFFFFF;
   }
